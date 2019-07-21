@@ -1,0 +1,21 @@
+.ask,
+.ask__form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ask__form input,
+.ask__greetings {
+  width: 100%;
+  border: none;
+  background: inherit;
+  color: #f1f2f6;
+  font-size: 48px;
+  font-family: "Acme", sans-serif, "Yanone Kaffeesatz", sans-serif;
+  text-align: center;
+}
+
+::placeholder {
+  color: #f1f2f6;
+}

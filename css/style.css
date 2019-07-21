@@ -1,0 +1,38 @@
+@import "clock.css";
+@import "reset.css";
+@import "ask.css";
+@import "todo.css";
+@import url("https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Acme", sans-serif, "Yanone Kaffeesatz", sans-serif;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
